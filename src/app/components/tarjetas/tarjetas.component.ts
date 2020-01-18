@@ -13,4 +13,7 @@ export class TarjetasComponent implements OnInit {
   ngOnInit() {
   }
 
+  verArtista(cancion){
+    
+  }
 }
