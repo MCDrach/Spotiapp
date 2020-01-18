@@ -1,2 +1,2 @@
-<app-loading></app-loading>
-<app-tarjetas [Canciones] = "nuevasCanciones"></app-tarjetas>
+<app-loading *ngIf="nuevasCanciones.length == 0"></app-loading>
+<app-tarjetas *ngIf="nuevasCanciones.length != 0" [Canciones]="nuevasCanciones"></app-tarjetas>
