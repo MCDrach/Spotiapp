@@ -1,2 +1,6 @@
-<app-loading *ngIf="nuevasCanciones.length == 0"></app-loading>
+<app-loading *ngIf="nuevasCanciones.length == 0 && !error"></app-loading>
+<div *ngIf="error" class="alert alert-danger animated fadeIn">
+    <h3>Error</h3>
+    <p>{{mensajeError}}</p>
+</div>
 <app-tarjetas *ngIf="nuevasCanciones.length != 0" [Canciones]="nuevasCanciones"></app-tarjetas>
